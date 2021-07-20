@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const PrimeraApp = ( { saludo, subtitulo  }  ) => {
+const CounterApp = ( { value  }  ) => {
 
    // const saludo = 'Hola mundo desde react';
 
@@ -9,8 +9,8 @@ const PrimeraApp = ( { saludo, subtitulo  }  ) => {
         <section className="fila">  
             <div className="contenedor1">
                 <div className="col-full-12">
-                    <h1> { saludo } </h1>
-                    <p>{ subtitulo }</p>
+                    <h1> CounterApp </h1>
+                    <h2>{ value }</h2>
                 </div>
             </div>
         </section>
@@ -18,12 +18,12 @@ const PrimeraApp = ( { saludo, subtitulo  }  ) => {
     
 }
 
-PrimeraApp.propTypes = { 
-    saludo: PropTypes.string
+CounterApp.propTypes = { 
+    value: PropTypes.number
 }
 
-PrimeraApp.defaultProps = {
-    subtitulo: 'Soy un subtitulo'
+CounterApp.defaultProps = {
+    value: 1234
 }
 
-export default PrimeraApp;
+export default CounterApp;
