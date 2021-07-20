@@ -4,13 +4,19 @@ import PropTypes from 'prop-types';
 const CounterApp = ( { value  }  ) => {
 
 
-    const [ counter, SetCounter ] = useState( 0 );
+    const [ counter, SetCounter ] = useState( value );
 
     const handleAdd = () => {
-        SetCounter( counter + 1 )
+        SetCounter( counter + 1 );
     }
 
+    const handleSub = () => {
+        SetCounter( counter - 1 );
+    }
 
+    const handleReset = () => {
+        SetCounter( value );
+    }
 
    // const saludo = 'Hola mundo desde react';
 
@@ -30,6 +36,14 @@ const CounterApp = ( { value  }  ) => {
                 <div className="col-full-12">
                     <button onClick={  handleAdd  } > +1 </button>
                 </div>
+
+                <div className="col-full-12">
+                    <button onClick={  handleReset  } > Reset </button>
+                </div>
+
+                <div className="col-full-12">
+                    <button onClick={  handleSub  } > -1 </button>
+                </div>
     
             </div>
         </section>
@@ -42,7 +56,7 @@ CounterApp.propTypes = {
 }
 
 CounterApp.defaultProps = {
-    value: 1234
+    value: 10
 }
 
 export default CounterApp;
