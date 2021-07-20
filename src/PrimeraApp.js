@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const PrimeraApp = () => {
+const PrimeraApp = ( { saludo }  ) => {
 
-    const saludo = 'Hola mundo desde react';
+   // const saludo = 'Hola mundo desde react';
 
     return (
         <section className="fila">  
@@ -16,5 +17,8 @@ const PrimeraApp = () => {
     
 }
 
+PrimeraApp.propTypes = { 
+    saludo: PropTypes.string
+}
 
 export default PrimeraApp;
