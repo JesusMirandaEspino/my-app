@@ -18,7 +18,7 @@ const CounterApp = ( { value  }  ) => {
         SetCounter( value );
     }
 
-   // const saludo = 'Hola mundo desde react';
+
 
     return (
         <section className="fila">  
