@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` CounterApp Debe de mostar < CounterApp/> correctamente 1`] = `
+<section
+  className="fila"
+>
+  <div
+    className="contenedor1"
+  >
+    <div
+      className="col-full-12"
+    >
+      <h1>
+         CounterApp 
+      </h1>
+      <h2>
+        10
+      </h2>
+    </div>
+    <div
+      className="col-full-12"
+    >
+      <h3>
+        10
+      </h3>
+    </div>
+    <div
+      className="col-full-12"
+    >
+      <button
+        onClick={[Function]}
+      >
+         +1 
+      </button>
+    </div>
+    <div
+      className="col-full-12"
+    >
+      <button
+        onClick={[Function]}
+      >
+         Reset 
+      </button>
+    </div>
+    <div
+      className="col-full-12"
+    >
+      <button
+        onClick={[Function]}
+      >
+         -1 
+      </button>
+    </div>
+  </div>
+</section>
+`;

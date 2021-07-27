@@ -30,7 +30,7 @@ const CounterApp = ( { value  }  ) => {
                 </div>
 
                 <div className="col-full-12">
-                    <h2>{ counter }</h2>
+                    <h3>{ counter }</h3>
                 </div>
 
                 <div className="col-full-12">
