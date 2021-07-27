@@ -48,8 +48,9 @@ describe( ' CounterApp', () => {
         const valueCounter = wrapper.find( 'h3' ).text().trim();
 
         expect( valueCounter  ).toBe( '11' );
-
     } );
+
+
 
 
     test( 'Debe de incrementar con el boton -1', () => {
@@ -59,8 +60,23 @@ describe( ' CounterApp', () => {
         const valueCounter = wrapper.find( 'h3' ).text().trim();
 
         expect( valueCounter  ).toBe( '9' );
+    } );
+
+
+
+    test( 'Debe de devolver el valor por defecto', () => {
+
+        const wrapper = shallow( <CounterApp  value={ 105 } />);
+
+        wrapper.find('button').at(0).simulate( 'click' );
+        wrapper.find('button').at(0).simulate( 'click' );
+        wrapper.find('button').at(1).simulate( 'click' );
+
+        const valueCounter = wrapper.find( 'h3' ).text().trim();
+        expect( valueCounter  ).toBe( '105' );
 
     } );
+
 
 
 } );
