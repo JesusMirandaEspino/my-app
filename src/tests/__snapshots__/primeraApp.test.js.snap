@@ -1,3 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Primera App Debe de mostar <PrimeraApp/> correctamente 1`] = `ShallowWrapper {}`;
+exports[`Primera App Debe de mostar <PrimeraApp/> correctamente 1`] = `
+<section
+  className="fila"
+>
+  <div
+    className="contenedor1"
+  >
+    <div
+      className="col-full-12"
+    >
+      <h1>
+         
+        Hola a todos
+         
+      </h1>
+      <p>
+        Soy un subtitulo
+      </p>
+    </div>
+  </div>
+</section>
+`;

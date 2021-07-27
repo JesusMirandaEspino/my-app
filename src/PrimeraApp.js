@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const PrimeraApp = ( { saludo, subtitulo  }  ) => {
 
-   // const saludo = 'Hola mundo desde react';
+   // fuera de codigo const saludo = 'Hola mundo desde react';
 
     return (
         <section className="fila">  
